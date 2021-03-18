@@ -100,10 +100,100 @@ purple: #C490D1;
 light yellow: #F6F188;
 light blue: #CFE8ED;
 light purple: #E5CBEC;
+very light purple: #F2ECF3;
 */
 /* universal styles */
-
-
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+}
+body {
+  background: #CFE8ED;
+  font-family: 'Inconsolata', monospace;
+}
+#ipod-container {
+  margin-top: 30px;
+}
+/* ipod body */
+#ipod-body {
+  background: linear-gradient(to top, #C490D1, #E5CBEC, #C490D1);
+  border-radius: 30px;
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+}
+/* ipod shadow */ 
+#ipod-body::before {
+  content: " ";
+  background: #C490D1;
+  border-radius: 30px;
+  width: 507px;
+  height: 702px;
+  z-index: -10;
+  position: absolute;
+  transform: translate(-10px, 5px);
+}
+/* window that shows song info */
+#ipod-window {
+  padding-top: 40px;
+}
+.ipod-window-content {
+  background: #F2ECF3;
+  border: 8px solid #C490D1;
+  border-radius: 10px;
+  width: 85%;
+  height: 275px;
+  margin: 0 auto;
+}
+/* trackpad/scroll wheel */
+.ipod-trackpad {
+  padding-top: 30px;
+}
+.ipod-trackpad-content {
+  background: #F2ECF3;
+  border-radius: 300px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+/* inside wheel */ 
+.ipod-trackpad-content::before {
+  content: " ";
+  background: linear-gradient(to bottom, #C490D1, #E5CBEC);
+  width: 170px;
+  height: 170px;
+  border-radius: 160px;
+  top: 20%;
+  left: 22%;
+  z-index: 100;
+  position: absolute;
+}
+/* trackpad buttons */
+.ipod-trackpad-content-container {
+  position: relative;
+}
+.ipod-trackpad-content-container h3 {
+  color: #C490D1;
+  font-weight: 900;
+  position: absolute;
+  text-transform: uppercase;
+}
+.ipod-trackpad-content-container h3#menu {
+  left: 45%;
+  top: 10px;
+}
+.ipod-trackpad-content-container h3#backwards {
+  left: 5%;
+  margin-top: 130px;
+}
+.ipod-trackpad-content-container h3#forwards {
+  right: 5%;
+  margin-top: 130px;
+}
+.ipod-trackpad-content-container h3#play {
+  left: 45%;
+  top: 260px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

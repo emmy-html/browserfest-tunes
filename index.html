@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>tunes</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="site.webmanifest">
@@ -11,22 +11,37 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <!-- Ipod Shell (Dark Purple shadow)-->
+  <div id="ipod-container">
+    <!-- Ipod Shell (Light purple)-->
+    <div id="ipod-body">
+      <!-- Content window -->
+      <div id="ipod-window">
+        <div class="ipod-window-content">
+        </div>
+        <!-- Scroll wheel -->
+        <div class="ipod-trackpad">
+          <div class="ipod-trackpad-content">
+            <div class="ipod-trackpad-content-container">
+              <h3 id="menu">Menu</h3>
+              <h3 id="backwards"> 	
+                &#124;&#10094;&#10094;</h3>
+              <h3 id="forwards"> 	
+                &#10095;&#10095;&#124;</h3>
+              <h3 id="play">Play</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
