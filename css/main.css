@@ -106,11 +106,30 @@ very light purple: #F2ECF3;
 h1, h2, h3, h4, h5, h6, p {
   margin: 0px;
 }
+ul, li {
+  margin: 0px;
+  padding: 0px;
+}
 body {
   background: #CFE8ED;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Source Code Pro', monospace;
+}
+.content-wrapper {
+  margin: 0px 10px;
+}
+/* turn entire page into flex container */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0px 30px;
 }
 #ipod-container {
+  margin-top: 30px;
+  width: 60%;
+}
+#vibe-check {
+  width: 40%;
   margin-top: 30px;
 }
 /* ipod body */
@@ -143,6 +162,58 @@ body {
   width: 85%;
   height: 275px;
   margin: 0 auto;
+}
+/* ipod menu options */ 
+.ipod-menu-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#ipod-menu-options {
+  box-shadow: 5px 0px 20px -2px #C490D1;
+  width: 55%;
+  z-index: 10;
+}
+#ipod-menu-options h2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+#ipod-menu-options span.status {
+  color: #C490D1;
+}
+#ipod-menu-options span.battery {
+  color: #A0D2DB;
+}
+#ipod-menu-options ul li {
+  font-size: 1.25rem;
+  list-style-type: none;
+  padding: 0px 10px;
+  transition: .2s all;
+}
+#ipod-menu-options ul li:hover {
+  background: #C490D1;
+  cursor: pointer;
+  font-weight: 700;
+}
+#ipod-menu-options ul li:hover::after {
+  content: " > ";
+  font-size: .65rem;
+  font-weight: 900;
+}
+#ipod-menu-options #active-menu-item {
+  background: #C490D1;
+  font-weight: 700;
+}
+#ipod-menu-options #active-menu-item::after {
+  content: " > ";
+  font-size: .65rem;
+  font-weight: 900;
+}
+#album-art {
+  background: url('../img/album-art-solange.png') left / cover;
+  width: 45%;
+  height: 275px;
 }
 /* trackpad/scroll wheel */
 .ipod-trackpad {
@@ -179,7 +250,7 @@ body {
   text-transform: uppercase;
 }
 .ipod-trackpad-content-container h3#menu {
-  left: 45%;
+  left: 43%;
   top: 10px;
 }
 .ipod-trackpad-content-container h3#backwards {
@@ -191,8 +262,58 @@ body {
   margin-top: 130px;
 }
 .ipod-trackpad-content-container h3#play {
-  left: 45%;
+  left: 43%;
   top: 260px;
+}
+/* vibe check section */ 
+#vibe-check .vibe-bar {
+  background: repeating-linear-gradient(
+  45deg,
+  #E5CBEC,
+  #E5CBEC 10px,
+  #CFE8ED 10px,
+  #CFE8ED 20px
+  );
+  border: 3px solid #E5CBEC;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 20px;
+  text-transform: uppercase;
+}
+@keyframes sizeVary {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 400px;
+  }
+}
+#vibe-check .vibe-bar:nth-of-type(1) {
+  animation: 2.5s sizeVary infinite;
+  animation-timing-function: ease-in-out;
+}
+#vibe-check .vibe-bar:nth-of-type(2) {
+  animation: 2s sizeVary infinite;
+  animation-timing-function: ease-in-out;
+}
+#vibe-check .vibe-bar:nth-of-type(3) {
+  animation: 1.5s sizeVary infinite;
+  animation-timing-function: ease-in-out;
+}
+#vibe-check .vibe-bar:nth-of-type(4) {
+  animation: 3.5s sizeVary infinite;
+  animation-timing-function: ease-in-out;
+}
+footer {
+  padding: 30px 10px;
+  text-align: center;
+}
+/* large screens */ 
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-flow: row nowrap;
+  }
 }
 /* ==========================================================================
    Helper classes

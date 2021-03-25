@@ -1,47 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>tunes</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>tunes</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <!-- Ipod Shell (Dark Purple shadow)-->
-  <div id="ipod-container">
-    <!-- Ipod Shell (Light purple)-->
-    <div id="ipod-body">
-      <!-- Content window -->
-      <div id="ipod-window">
-        <div class="ipod-window-content">
-        </div>
-        <!-- Scroll wheel -->
-        <div class="ipod-trackpad">
-          <div class="ipod-trackpad-content">
-            <div class="ipod-trackpad-content-container">
-              <h3 id="menu">Menu</h3>
-              <h3 id="backwards"> 	
-                &#124;&#10094;&#10094;</h3>
-              <h3 id="forwards"> 	
-                &#10095;&#10095;&#124;</h3>
-              <h3 id="play">Play</h3>
+  <body>
+    <main>
+      <!-- Ipod Shell (Dark Purple shadow)-->
+      <section id="ipod-container">
+        <!-- Ipod Shell (Light purple)-->
+        <div id="ipod-body">
+          <!-- Content window -->
+          <div id="ipod-window">
+            <div class="ipod-window-content">
+              <article class="ipod-menu-container">
+                <aside id="ipod-menu-options">
+                  <h2>
+                    <span>ePod</span> <span class="status">&#9789;</span><span class="battery">&#9644;</span>
+                  </h2>
+                  <ul>
+                    <li id="active-menu-item">Music</li>
+                    <li>Shuffle Songs</li>
+                    <li>Settings</li>
+                    <li>Now Playing</li>
+                  </ul>
+                </aside>
+                <aside id="album-art">&nbsp;</aside>
+              </article>
+            </div>
+            <!-- Scroll wheel -->
+            <div class="ipod-trackpad">
+              <div class="ipod-trackpad-content">
+                <div class="ipod-trackpad-content-container">
+                  <h3 id="menu">Menu</h3>
+                  <h3 id="backwards">&#124;&#10094;&#10094;</h3>
+                  <h3 id="forwards">&#10095;&#10095;&#124;</h3>
+                  <h3 id="play" onclick="playSong()">&#9658;</h3>
+                  <audio id="song-container">
+                    <source src="songs/dragonball.mp3" />
+                  </audio>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+      </section>
+      <section id="vibe-check">
+        <h1>Vibe Check</h1>
+        <h2>Song Name</h2>
+        <div class="vibe-bar">Binz</div>
+        <h2>Artist</h2>
+        <div class="vibe-bar">Solange</div>
+        <h2>Bass</h2>
+        <div class="vibe-bar">Bumpin</div>
+        <h2>Volume</h2>
+        <div class="vibe-bar">Just Right</div>
+      </section>
+    </main>
+    <footer>
+      Disclaimer:
+      Please view on screen of at least 768px. Thank you!
+    </footeR>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
