@@ -121,6 +121,16 @@ body {
   #F6F188);
   font-family: 'Source Code Pro', monospace;
 }
+/* title */
+h1.project-title {
+  font-size: 3rem;
+  margin-top: 5px;
+  text-align: center;
+  text-transform: lowercase;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  text-shadow: 2.5px -1.5px 0px black; 
+}
 .content-wrapper {
   margin: 0px 10px;
 }
@@ -133,7 +143,7 @@ main {
   margin: 0px 10px;
 }
 #ipod-container {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 60%;
 }
 #vibe-check {
@@ -295,6 +305,7 @@ main {
   text-transform: lowercase;
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  text-shadow: 2px 1.5px 0px black; 
 }
 #vibe-check .vibe-bar {
   background: repeating-linear-gradient(
@@ -317,8 +328,7 @@ main {
 #vibe-check .vibe-bar:hover {
   cursor: crosshair;
   -webkit-text-stroke: none;
-  -webkit-text-fill-color: rgba(0, 0, 0, 1);
-  text-transform: uppercase;
+  text-shadow: 2.5px -1.5px 0px black; 
 }
 @keyframes sizeVary {
   0% {
