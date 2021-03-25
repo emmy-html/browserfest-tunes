@@ -147,7 +147,7 @@ let songs = [
   },
   {
     name: "Touch Me",
-    artist: "Victoria Monét ft. Kehlani",
+    artist: "Victoria Monét <br> ft. Kehlani",
     album: "Jaguar",
     length: "3:11",
     source: "songs/touch_me.mp3",
