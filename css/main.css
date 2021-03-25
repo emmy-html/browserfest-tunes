@@ -176,6 +176,7 @@ main {
 }
 #ipod-menu-options h2 {
   display: flex;
+  font-size: .80rem;
   justify-content: space-between;
   padding: 0px 10px;
 }
@@ -211,7 +212,9 @@ main {
   font-weight: 900;
 }
 #album-art {
-  background: url('../img/album-art-solange.png') left / cover;
+  background-image: url('../img/album-art-solange.png');
+  background-position: left;
+  background-size: cover;
   width: 45%;
   height: 275px;
 }

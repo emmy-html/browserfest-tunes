@@ -1,3 +1,50 @@
+// get time & date and display them in the top bar of the ePod
+const dateContainer = document.getElementById("time-date");
+var today = new Date();
+var todayMonth = today.getMonth();
+var todayDay = today.getDate();
+var todayYear = today.getFullYear();
+switch(todayMonth) {
+    case 0:
+        todayMonth = "01";
+        break;
+    case 1:
+        todayMonth = "02";
+        break;
+    case 2:
+        todayMonth = "03";
+        break;
+    case 3:
+        todayMonth = "04";
+        break;
+    case 4:
+        todayMonth = "05";
+        break;
+    case 5:
+        todayMonth = "06";
+        break;
+    case 6:
+        todayMonth = "07";
+        break;
+    case 7:
+        todayMonth = "08";
+        break;
+    case 8:
+        todayMonth = "09";
+        break;
+    case 9:
+        todayMonth = "10";
+        break;
+    case 10:
+        todayMonth = "11";
+        break;
+    case 11:
+        todayMonth = "12";
+        break;
+    default:
+        todayMonth = "Month doesn't exist";
+} 
+dateContainer.innerHTML = "&#9789;" + " " + todayMonth + "/" + todayDay + "/" + todayYear;
 // audio element container
 const audioElement = document.getElementById("song-container");
 // grab the pause/play button
@@ -34,7 +81,7 @@ let songs = [
     album: "When I Get Home",
     length: "1:51",
     source: "songs/binz.mp3",
-    albumArt: "../img/album-art-solange.png",
+    albumArt: "url('img/album-art-solange.png')",
     vibe: "early-morning",
   },
   {
@@ -43,18 +90,9 @@ let songs = [
     album: "Jaguar",
     length: "3:11",
     source: "songs/touch_me.mp3",
-    albumArt: "../img/album-art-jaguar.png",
+    albumArt: "url('img/album-art-jaguar.png')",
     vibe: "late-night",
-  },
-  {
-    name: "test",
-    artist: "test",
-    album: "test",
-    length: "test",
-    source: "test",
-    albumArt: "test",
-    vibe: "test",
-  },
+  }
 ];
 // shuffle song function
 function shuffleSongs() {
@@ -63,6 +101,7 @@ function shuffleSongs() {
   const songArtist = document.getElementById("song-artist");
   const songAlbum = document.getElementById("song-album");
   const songLength = document.getElementById("song-length");
+  const songAlbumArt = document.getElementById("album-art");
   // select random song
   var shuffled = songs[Math.floor(Math.random() * songs.length)];
   // check to make sure song shuffled is not the song playing, if so, skip it
@@ -75,6 +114,7 @@ function shuffleSongs() {
   songArtist.innerHTML = shuffled.artist;
   songAlbum.innerHTML = shuffled.album;
   songLength.innerHTML = shuffled.length;
+  songAlbumArt.style.backgroundImage = shuffled.albumArt;
   // set audio source
   audioElement.src = shuffled.source;
 }
