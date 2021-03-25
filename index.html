@@ -26,11 +26,11 @@
               <article class="ipod-menu-container">
                 <aside id="ipod-menu-options">
                   <h2>
-                    <span>ePod</span> <span class="status">&#9789;</span><span class="battery">&#9644;</span>
+                    <span>ePod</span> <span id="time" class="status">&#9789;</span><span class="battery">&#9644;</span>
                   </h2>
                   <ul>
                     <li id="active-menu-item">Music</li>
-                    <li>Shuffle Songs</li>
+                    <li id="shuffle-button" onclick="shuffleSongs()">Shuffle Songs</li>
                     <li>Settings</li>
                     <li>Now Playing</li>
                   </ul>
@@ -45,9 +45,9 @@
                   <h3 id="menu">Menu</h3>
                   <h3 id="backwards">&#124;&#10094;&#10094;</h3>
                   <h3 id="forwards">&#10095;&#10095;&#124;</h3>
-                  <h3 id="play" onclick="playSong()">&#9658;</h3>
+                  <h3 id="play" onclick="playSong()" class="play-adjustments">&#9658;</h3>
                   <audio id="song-container">
-                    <source src="songs/dragonball.mp3" />
+                    <source src="songs/binz.mp3" />
                   </audio>
                 </div>
               </div>
@@ -56,15 +56,14 @@
         </div>
       </section>
       <section id="vibe-check">
-        <h1>Vibe Check</h1>
         <h2>Song Name</h2>
-        <div class="vibe-bar">Binz</div>
+        <div class="vibe-bar" id="song-name">Binz</div>
         <h2>Artist</h2>
-        <div class="vibe-bar">Solange</div>
-        <h2>Bass</h2>
-        <div class="vibe-bar">Bumpin</div>
-        <h2>Volume</h2>
-        <div class="vibe-bar">Just Right</div>
+        <div class="vibe-bar" id="song-artist">Solange</div>
+        <h2>Album</h2>
+        <div class="vibe-bar" id="song-album">When I Get Home</div>
+        <h2>Song Length</h2>
+        <div class="vibe-bar" id="song-length">1:51</div>
       </section>
     </main>
     <footer>
