@@ -1,3 +1,13 @@
+// check width to choose if content will display
+function checkWidth() {
+  const w = window.innerWidth;
+  if (w < 768) {
+    alert("Please view on a screen size that is at least 768px wide! Thank you!");
+  } else {
+    console.log("Success!");
+  }
+  body.innerHTML = "Error";
+}
 // get time & date and display them in the top bar of the ePod
 function updateTime() {
   // declare variables for am/pm & the symbols that go with them
@@ -65,30 +75,84 @@ function updateTime() {
     timeIndicatorSymbol = "&#9728;";
   }
   // convert hours from military time into US standard time
-  if (todayHour == 0 || todayHour == 12) {
-    todayHour = "12";
-  } else if (todayHour == 1 || todayHour == 13) {
-    todayHour = "01";
-  } else if (todayHour == 2 || todayHour == 14) {
-    todayHour = "02";
-  } else if (todayHour == 3 || todayHour == 15) {
-    todayHour = "03";
-  } else if (todayHour == 4 || todayHour == 16) {
-    todayHour = "04";
-  } else if (todayHour == 5 || todayHour == 17) {
-    todayHour = "05";
-  } else if (todayHour == 6 || todayHour == 18) {
-    todayHour = "06";
-  } else if (todayHour == 7 || todayHour == 19) {
-    todayHour = "07";
-  } else if (todayHour == 8 || todayHour == 20) {
-    todayHour == "08";
-  } else if (todayHour == 9 || todayHour == 21) {
-    todayHour == "09";
-  } else if (todayHour == 10 || todayHour == 22) {
-    todayHour == "10";
-  } else {
-    todayHour = "11";
+  switch(todayHour) {
+    case 0:
+      todayHour = "12";
+      break;
+    case 1:
+      todayHour = "01";
+      break;
+    case 2:
+      todayHour = "02";
+      break;
+    case 3:
+      todayHour = "03";
+      break;
+    case 4:
+      todayHour = "04";
+      break;    
+    case 5:
+      todayHour = "05";
+      break; 
+    case 6:
+      todayHour = "06";
+      break;
+    case 7:
+      todayHour = "07";
+      break; 
+    case 8:
+      todayHour = "08";
+      break; 
+    case 9:
+      todayHour = "09";
+      break; 
+    case 10:
+      todayHour = "10";
+      break; 
+    case 11:
+      todayHour = "11";
+      break;
+    case 12:
+      todayHour = "12";
+      break;
+    case 13:
+      todayHour = "01";
+      break;
+    case 14:
+      todayHour = "02";
+      break;
+    case 15:
+      todayHour = "03";
+      break;
+    case 16:
+      todayHour = "04";
+      break;
+    case 17:
+      todayHour = "05";
+      break;
+    case 18:
+      todayHour = "06";
+      break;
+    case 19:
+      todayHour = "07";
+      break;
+    case 20:
+      todayHour = "08";
+      break;
+    case 21:
+      todayHour = "09";
+      break;
+    case 22:
+      todayHour = "10";
+      break; 
+    case 23:
+      todayHour = "11";
+      break;
+    case 11:
+      todayHour = "12";
+      break;
+    default:
+      todayHour = "404";
   }
   // plug the date & time into the inner HTML of the container
   dateContainer.innerHTML =
@@ -143,7 +207,70 @@ let songs = [
     length: "1:51",
     source: "songs/binz.mp3",
     albumArt: "url('img/album-art-solange.png')",
-    vibe: "early-morning",
+    vibe: "early-riser",
+  },
+  {
+    name: "Distance",
+    artist: "Yebba",
+    album: "Distance",
+    length: "4:15",
+    source: "songs/distance.mp3",
+    albumArt: "url('img/album-art-yebba.png')",
+    vibe: "sunday-afternoon",
+  },
+  {
+    name: "Coffee For Dinner",
+    artist: "Orion Sun",
+    album: "Hold Space For Me",
+    length: "2:53",
+    source: "songs/touch_me.mp3",
+    albumArt: "url('img/album-art-orion-sun.png')",
+    vibe: "wednesday-evening-coffee",
+  },
+  {
+    name: "Drive and Disconnect",
+    artist: "NAO",
+    album: "Saturn",
+    length: "3:30",
+    source: "songs/drive_and_disconnect.mp3",
+    albumArt: "url('img/album-art-nao.png')",
+    vibe: "noon",
+  },
+  {
+    name: "Prisoner",
+    artist: "Miley Cyrus <br>ft. Dua Lipa",
+    album: "Plastic Hearts",
+    length: "2:49",
+    source: "songs/prisoner.mp3",
+    albumArt: "url('img/album-art-plastic-hearts.png')",
+    vibe: "late-night-drive",
+  },
+  {
+    name: "Find An Island",
+    artist: "BENEE",
+    album: "STELLA & STEVE",
+    length: "3:12",
+    source: "songs/find_an_island.mp3",
+    albumArt: "url('img/album-art-benee.png')",
+    vibe: "friday-morning",
+  },
+  {
+    name: "Fake ID",
+    artist: "Kah-Lo ft. Riton",
+    album: "Foreign Ororo<br>(Special Edition)",
+    length: "4:06",
+    source: "songs/fake_id.mp3",
+    albumArt: "url('img/album-art-kah-lo.png')",
+    vibe: "nightclub",
+  },
+  {
+    name: "Headaches",
+    artist: "Raveena",
+    album: "Headaches",
+    length: "5:11",
+    source: "songs/headaches.mp3",
+    albumArt: "url('img/album-art-headaches.png')",
+    vibe: "dinner-with-her",
   },
   {
     name: "Touch Me",
@@ -152,8 +279,8 @@ let songs = [
     length: "3:11",
     source: "songs/touch_me.mp3",
     albumArt: "url('img/album-art-jaguar.png')",
-    vibe: "late-night",
-  },
+    vibe: "midnight",
+  }
 ];
 // shuffle song function
 function shuffleSongs() {
