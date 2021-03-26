@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>vibe check</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="stylesheet" href="https://github.com/emmy-html/browserfest-tunes/css/normalize.css" />
+    <link rel="stylesheet" href="https://github.com/emmy-html/browserfest-tunes/css/main.css" />
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="project-title">Vibe Check</h1>
+    </header>
+    <main>
+      <!-- Ipod Shell (Dark Purple shadow)-->
+      <section id="ipod-container">
+        <!-- Ipod Shell (Light purple)-->
+        <div id="ipod-body">
+          <!-- Content window -->
+          <div id="ipod-window">
+            <div class="ipod-window-content">
+              <article class="ipod-menu-container">
+                <aside id="ipod-menu-options">
+                  <h2>
+                    <span>ePod</span> <span id="time-date" class="status"></span><span class="battery">&#9644;</span>
+                  </h2>
+                  <ul>
+                    <li id="active-menu-item">Music</li>
+                    <li id="shuffle-button" onclick="shuffleSongs()">Shuffle Songs</li>
+                    <li>Settings</li>
+                    <li>Now Playing</li>
+                  </ul>
+                </aside>
+                <aside id="album-art">&nbsp;</aside>
+              </article>
+            </div>
+            <!-- Scroll wheel -->
+            <div class="ipod-trackpad">
+              <div class="ipod-trackpad-content">
+                <div class="ipod-trackpad-content-container">
+                  <h3 id="menu">Menu</h3>
+                  <h3 id="backwards">&#124;&#10094;&#10094;</h3>
+                  <h3 id="forwards">&#10095;&#10095;&#124;</h3>
+                  <h3 id="play" onclick="playSong()" class="play-adjustments">&#9658;</h3>
+                  <audio id="song-container">
+                    <source src="https://github.com/emmy-html/browserfest-tunes/songs/binz.mp3" />
+                  </audio>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="vibe-check">
+        <h2>Song Name</h2>
+        <div class="vibe-bar" id="song-name">Binz</div>
+        <h2>Artist</h2>
+        <div class="vibe-bar" id="song-artist">Solange</div>
+        <h2>Album</h2>
+        <div class="vibe-bar" id="song-album">When I Get Home</div>
+        <h2>Song Length</h2>
+        <div class="vibe-bar" id="song-length">1:51</div>
+      </section>
+    </main>
+    <footer>
+      Disclaimer:
+      Please view on screen of at least 768px. Thank you!
+    </footeR>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
