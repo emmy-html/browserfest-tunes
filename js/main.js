@@ -148,11 +148,14 @@ function updateTime() {
     case 23:
       todayHour = "11";
       break;
-    case 11:
-      todayHour = "12";
-      break;
     default:
       todayHour = "404";
+  }
+  // force minutes to always display as double
+  if (todayMins < 10) {
+    todayMins = "0" + todayMins;
+  } else {
+    todayMins = todayMins;
   }
   // plug the date & time into the inner HTML of the container
   dateContainer.innerHTML =
