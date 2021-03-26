@@ -209,8 +209,8 @@ let songs = [
     artist: "Solange",
     album: "When I Get Home",
     length: "1:51",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/binz.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-solange.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/binz.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-solange.png')",
     vibe: "early-riser",
   }, /*
   {
@@ -218,8 +218,8 @@ let songs = [
     artist: "Yebba",
     album: "Distance",
     length: "4:15",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/distance.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-yebba.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/distance.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-yebba.png')",
     vibe: "sunday-afternoon",
   },
   {
@@ -227,8 +227,8 @@ let songs = [
     artist: "Orion Sun",
     album: "Hold Space For Me",
     length: "2:53",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/touch_me.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-orion-sun.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/touch_me.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-orion-sun.png')",
     vibe: "wednesday-evening-coffee",
   },
   {
@@ -236,8 +236,8 @@ let songs = [
     artist: "NAO",
     album: "Saturn",
     length: "3:30",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/drive_and_disconnect.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-nao.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/drive_and_disconnect.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-nao.png')",
     vibe: "noon",
   },
   {
@@ -245,8 +245,8 @@ let songs = [
     artist: "Miley Cyrus <br>ft. Dua Lipa",
     album: "Plastic Hearts",
     length: "2:49",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/prisoner.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-plastic-hearts.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/prisoner.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-plastic-hearts.png')",
     vibe: "late-night-drive",
   },
   {
@@ -254,8 +254,8 @@ let songs = [
     artist: "BENEE",
     album: "STELLA & STEVE",
     length: "3:12",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/find_an_island.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-benee.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/find_an_island.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-benee.png')",
     vibe: "friday-morning",
   },
   {
@@ -263,8 +263,8 @@ let songs = [
     artist: "Kah-Lo ft. Riton",
     album: "Foreign Ororo<br>(Special Edition)",
     length: "4:06",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/fake_id.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-kah-lo.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/fake_id.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-kah-lo.png')",
     vibe: "nightclub",
   },
   {
@@ -272,8 +272,8 @@ let songs = [
     artist: "Raveena",
     album: "Headaches",
     length: "5:11",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/headaches.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-headaches.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/headaches.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-headaches.png')",
     vibe: "dinner-with-her",
   }, */
   {
@@ -281,8 +281,8 @@ let songs = [
     artist: "Victoria Monét <br> ft. Kehlani",
     album: "Jaguar",
     length: "3:11",
-    source: "https://github.com/emmy-html/browserfest-tunes/songs/touch_me.mp3",
-    albumArt: "url('https://github.com/emmy-html/browserfest-tunes/img/album-art-jaguar.png')",
+    source: "https://github.com/emmy-html/vibe-check/songs/touch_me.mp3",
+    albumArt: "url('https://github.com/emmy-html/vibe-check/img/album-art-jaguar.png')",
     vibe: "midnight",
   }
 ];
