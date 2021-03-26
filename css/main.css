@@ -317,11 +317,15 @@ main {
   #CFE8ED,
   #F6F188
   );
+  display: flex;
+  align-items: center;
   border-radius: 20px;
   font-weight: 900;
   font-size: 2rem;
   line-height: 1.75rem;
   padding: 20px;
+  min-height: 55px;
+  vertical-align: text-top;
   text-transform: lowercase;
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);

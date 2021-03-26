@@ -181,6 +181,7 @@ var counter = 0;
 // audio player
 function playSong() {
   const playButton = document.getElementById("play");
+  var paused = audioElement.isPaused;
   // define audio element
   audioElement.play();
   // alternate between pause & play depending on if the song is playing or not
@@ -211,7 +212,7 @@ let songs = [
     source: "songs/binz.mp3",
     albumArt: "url('img/album-art-solange.png')",
     vibe: "early-riser",
-  },
+  }, /*
   {
     name: "Distance",
     artist: "Yebba",
@@ -274,7 +275,7 @@ let songs = [
     source: "songs/headaches.mp3",
     albumArt: "url('img/album-art-headaches.png')",
     vibe: "dinner-with-her",
-  },
+  }, */
   {
     name: "Touch Me",
     artist: "Victoria Monét <br> ft. Kehlani",
